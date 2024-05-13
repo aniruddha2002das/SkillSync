@@ -1,7 +1,7 @@
 import { IconBadge } from "@/components/icon-badge";
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs";
-import { File, IndianRupee, LayoutDashboard, ListChecks } from "lucide-react";
+import { DollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
 import { redirect } from "next/navigation";
 import React from "react";
 import TitleForm from "./_components/TitleForm";
@@ -120,7 +120,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 
             <div>
               <div className=" flex items-center gap-x-2">
-                <IconBadge icon={IndianRupee} />
+                <IconBadge icon={DollarSign} />
                 <h2 className=" text-xl">Sell Your Course</h2>
               </div>
 
