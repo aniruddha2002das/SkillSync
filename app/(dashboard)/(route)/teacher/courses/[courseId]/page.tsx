@@ -1,7 +1,7 @@
 import { IconBadge } from "@/components/icon-badge";
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs";
-import { DollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
+import { DollarSign,IndianRupee, File, LayoutDashboard, ListChecks } from "lucide-react";
 import { redirect } from "next/navigation";
 import React from "react";
 import TitleForm from "./_components/TitleForm";
@@ -84,9 +84,9 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
             </span>
           </div>
           <Action
-          disabled={!isComplete}
-          courseId={params.courseId}
-          isPublished={course.isPublished}
+            disabled={!isComplete}
+            courseId={params.courseId}
+            isPublished={course.isPublished}
           />
         </div>
 
@@ -120,7 +120,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 
             <div>
               <div className=" flex items-center gap-x-2">
-                <IconBadge icon={DollarSign} />
+                <IconBadge icon={IndianRupee} />
                 <h2 className=" text-xl">Sell Your Course</h2>
               </div>
 
